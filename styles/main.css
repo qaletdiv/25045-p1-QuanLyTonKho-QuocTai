@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #304c68;
+}
+
+.auth-layout {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    max-height: 700px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-size: 1.4rem;
+}
+
+.auth-banner,
+.auth-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.auth-banner {
+    padding: 20px;
+}
+
+.auth-content {
+    flex-direction: column;
+    padding: 0px 32px 40px;
+}
+.auth-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.auth-description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-label {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.form-input {
+    height: 38px;
+    width: 100%;
+    padding-left: 5px;
+    border-radius: 0.8rem;
+    border: 0.5px solid #044275;
+}
+
+
+.auth-banner__image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.auth-logo {
+    width: 210px;
+    height: auto;
+    object-fit: contain;
+}
+
+.btn-login {
+    background-color: #044275;
+    height: 3.8rem;
+    width: 100%;
+    color: #ffffff;
+    border-radius: 0.8rem;
+    text-transform: uppercase
+}
+
+@media (max-width: 992px) {
+    .auth-layout {
+        max-width: 90%;
+    }
+
+    .auth-content {
+        padding: 3rem 2.4rem;
+    }
+
+    .auth-banner__image {
+        max-width: 32rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-banner {
+        display: none;
+    }
+}
