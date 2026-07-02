@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <title>Dash</title>
 </head>
+
 <body>
-    
+    <div class="dashboard">
+        <div class="dashboard__sidebar">
+            <div class="sidebar__logo">
+                <img src="/image/logo.png" alt="logo">
+            </div>
+            <div class="sidebar__menu">
+                <div class="sidebar__item sidebar__active">
+                    <a href="#">
+                        <i class="ri-shopping-bag-3-line"></i>
+                        <span>Đơn mua hàng</span>
+                    </a>
+                </div>
+
+                <div class="sidebar__item">
+                    <a href="#">
+                        <i class="ri-box-3-line"></i>
+                        <span>Sản phẩm</span>
+                    </a>
+                </div>
+
+                <div class="sidebar__item">
+                    <a href="#">
+                        <i class="ri-store-2-line"></i>
+                        <span>Nhà cung cấp</span>
+                    </a>
+                </div>
+
+                <div class="sidebar__item">
+                    <a href="#">
+                        <i class="ri-archive-line"></i>
+                        <span>Tồn kho</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard__main">
+            <div class="dashboard__header">
+                <p class="header__title">Danh sách Đơn mua hàng</p>
+                <div class="header__user">
+                    <div class="user__info">
+                        <i class="ri-user-3-line user__icon"></i>
+                        <span class="user__name"></span>
+                    </div>
+
+                    <button class="btn__logout">
+                        Đăng xuất
+                    </button>
+                </div>
+            </div>
+            <div class="dashboard__content">
+    <div class="content__toolbar">
+        <div class="toolbar__filters">
+            <div class="form__group">
+                <label for="orderCode">Mã đơn hàng</label>
+                <input
+                    type="text"
+                    id="orderCode"
+                    placeholder="Nhập mã đơn hàng"
+                />
+            </div>
+
+            <div class="form__group">
+    <label for="supplierName">Tên nhà cung cấp</label>
+
+    <select id="supplierName">
+    </select>
+</div>
+
+            <button class="btn btn__search">
+                <i class="ri-search-line"></i>
+                Tìm kiếm
+            </button>
+        </div>
+
+        <button class="btn btn__create">
+            <i class="ri-add-line"></i>
+            Tạo mới
+        </button>
+    </div>
+
+    <div class="table__wrapper">
+    <table class="order__table">
+        <thead>
+            <tr>
+                <th>Mã đơn hàng</th>
+                <th>Tên nhà cung cấp</th>
+                <th>Ngày mua hàng</th>
+                <th>Nhân viên phụ trách</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>PO-0001</td>
+                <td>Công ty TNHH ABC</td>
+                <td>02/07/2026</td>
+                <td>Nguyễn Quốc Tài</td>
+                <td>25.000.000đ</td>
+                <td>
+                    <span class="status status--draft">Bản nháp</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>PO-0002</td>
+                <td>Công ty XYZ</td>
+                <td>01/07/2026</td>
+                <td>Trần Văn A</td>
+                <td>12.500.000đ</td>
+                <td>
+                    <span class="status status--confirmed">Đã xác nhận</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>PO-0003</td>
+                <td>Công ty Minh Phát</td>
+                <td>30/06/2026</td>
+                <td>Lê Thị B</td>
+                <td>48.300.000đ</td>
+                <td>
+                    <span class="status status--received">Đã nhập kho</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+        </div>
+    </div>
 </body>
+<script type="module" src="../scripts/dashboard.js"></script>
+
 </html>

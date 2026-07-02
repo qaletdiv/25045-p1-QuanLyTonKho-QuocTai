@@ -1,0 +1,162 @@
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #304c68;
+}
+
+.auth-layout {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    max-height: 700px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+}
+
+.auth-banner,
+.auth-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.auth-banner {
+    padding: 20px;
+}
+
+.auth-content {
+    flex-direction: column;
+    padding: 0px 32px 40px;
+}
+
+.auth-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.auth-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#auth-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .icon-left {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.input-wrapper .icon-right {
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.form-input {
+    height: 38px;
+    width: 100%;
+    padding-left: 30px;
+    border-radius: 8px;
+    border: 0.5px solid #044275;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.form-checkbox {
+    padding-bottom: 20px;
+}
+
+
+.auth-banner__image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.auth-logo {
+    width: 210px;
+    height: auto;
+    object-fit: contain;
+}
+
+#btn-login {
+    background-color: #044275;
+    height: 38px;
+    width: 100%;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase
+}
+.auth-message {
+    margin-top: 10px;
+    color: #ff0000;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.233);
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .auth-layout {
+        max-width: 90%;
+    }
+
+    .auth-content {
+        padding: 30px 24px;
+    }
+
+    .auth-banner__image {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-banner {
+        display: none;
+    }
+}
